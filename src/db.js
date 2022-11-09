@@ -38,30 +38,7 @@ conexion.getConnection(
     connection.release();
     }
 );
-// const  esperar = () => {
-//  conexion.query('SELECT * from product', function(error, results, fields){
-//     if(error) throw error;
 
-// });
-//   conexion.query('SELECT * from category', function(error, results, fields){
-//     if(error) throw error;
-//      results.forEach(r => { category.push(r);});
-//      console.log('que trol' + category)
-//      module.exports = { category}
-//     // setTimeout( () => { results.push(category),5000})
-// });}
-
-
-// // function greet() {
-// //     console.log('Hello world');
-   //console.log(product + 'solito')
-// // }
-
-// // setTimeout(greet, 3000);
-// // console.log ('This message is shown first');
-//  esperar();
-// setTimeout( () => { console.log(product + ' llenate'),100000})
-//setTimeout(()=>{console.log(product + 'async'),300000})
 module.exports = {
 product, category
 };
