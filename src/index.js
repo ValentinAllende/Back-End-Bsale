@@ -15,5 +15,3 @@ app.use(express.json());
 app.listen(app.get("port"), () => {
   console.log(`Server on Port ${3000}`);
 });
-
-//coneion db

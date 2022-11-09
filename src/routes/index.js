@@ -12,15 +12,27 @@ router.get("/category", (req, res) => {
   }
 });
 //Buscador
-router.get("/products/search", async (req, res) => {
+router.get("/products/search", (req, res) => {
   const { name } = req.query;
   if (name) {
-    const productFilter = product[0].filter((x) =>
+    let productFilter = product[0].filter((x) =>
       x.name.toLowerCase().includes(name.toLowerCase())
     );
     res.json(productFilter);
   } else {
     res.status(200).send(product);
+  }
+});
+//Ordenado Categoria
+router.get("/products/category/:category", (req, res) => {
+  const { category } = req.params;
+  if (category) {
+    let productCat = product[0].filter((x) => x.category == category);
+    productCat.length
+      ? res.json(productCat)
+      : res.status(404).send("no se encontro la categoria");
+  } else {
+    res.status(404).send("no se encontro la categoria");
   }
 });
 
