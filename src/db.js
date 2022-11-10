@@ -3,7 +3,6 @@ const product = [];
 const category = [];
 //Me conecto a la base de Datos
 const conexion = mysql.createPool({
-  connectionLimit: 10,
   host: "mdb-test.c6vunyturrl6.us-west-1.rds.amazonaws.com",
   user: "bsale_test",
   password: "bsale_test",
