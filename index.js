@@ -5,7 +5,7 @@ const cors = require("cors");
 const routes = require("./src/routes/index.js");
 require("./src/db.js");
 //settings
-app.set("port", 3000);
+app.set("port", process.env.PORT || 3000);
 
 //middlewares
 app.use(morgan("dev"));
@@ -31,6 +31,6 @@ app.use((req, res, next) => {
 });
 app.use("/", routes);
 //inicia el servidor
-app.listen(app.get("port"), () => {
+app.listen(process.env.PORT || app.get("port"), () => {
   console.log(`Server on Port ${3000}`);
 });
