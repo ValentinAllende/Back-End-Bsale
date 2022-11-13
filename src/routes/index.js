@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const { product, category } = require("../db");
 const router = Router();
-router.get("/products", (req, res) => {
+router.get("/", (req, res) => {
   if (product.length > 0) {
     res.json(product);
   }
