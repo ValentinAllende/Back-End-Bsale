@@ -3,7 +3,7 @@ const { product, category } = require("../db");
 const router = Router();
 router.get("/products", (req, res) => {
   if (product.length > 0) {
-    res.send(product);
+    res.json(product);
   }
 });
 router.get("/category", (req, res) => {
