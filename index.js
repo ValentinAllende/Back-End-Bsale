@@ -31,6 +31,6 @@ app.use((req, res, next) => {
 });
 app.use("/", routes);
 //inicia el servidor
-app.listen(process.env.PORT || app.get("port"), () => {
+app.listen(app.get("port"), () => {
   console.log(`Server on Port ${3000}`);
 });
