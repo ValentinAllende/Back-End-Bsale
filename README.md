@@ -1,7 +1,7 @@
 # Back-End-Bsale
 Al realizar una petición HTTP, el servicio retornara un JSON con la siguiente estructura:
 ```
-### Para los Productos
+Para los Productos
 {
 id: 5
 name: "ENERGETICA MR BIG"
@@ -11,7 +11,7 @@ discount: 20
 category: 1
 }
 
-### Para las Categorias
+Para las Categorias
 {
 id: 1
 name: "bebida energetica"
@@ -34,7 +34,7 @@ name: "bebida energetica"
 - 5: snack
 - 6: cerveza
 - 7: vodka
-#### Obtener todos los Productos
+### Obtener todos los Productos
 
 ```http
   GET /products
@@ -48,7 +48,7 @@ name: "bebida energetica"
 ```http
   GET /products/search?name=
 ```
-## Obtener Productos por Categoria
+### Obtener Productos por Categoria
 ```http
   GET /products/category
 ```
