@@ -1,6 +1,9 @@
 const { Router } = require("express");
 const { product, category } = require("../db");
 const router = Router();
+router.get("/", (req, res) => {
+  res.send("Bienvenido, por favor ingrese una ruta");
+});
 router.get("/products", (req, res) => {
   if (product.length > 0) {
     res.json(product);
