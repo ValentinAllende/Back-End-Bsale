@@ -18,7 +18,11 @@ router.get("/products/search", (req, res) => {
     let productFilter = product[0].filter((x) =>
       x.name.toLowerCase().includes(name.toLowerCase())
     );
-    res.json(productFilter);
+    if (productFilter.length > 0) {
+      res.json(productFilter);
+    } else {
+      res.send("no se encontro un producto con ese nombre");
+    }
   } else {
     res.status(200).send(product);
   }
