@@ -1,6 +1,7 @@
 # Back-End-Bsale
 Al realizar una petición HTTP, el servicio retornara un JSON con la siguiente estructura:
 ```
+### Para los Productos
 {
 id: 5
 name: "ENERGETICA MR BIG"
@@ -8,6 +9,12 @@ url_image: "https://dojiw2m9tvv09.cloudfront.net/11132/product/misterbig3308256.
 price : 1490
 discount: 20
 category: 1
+}
+
+### Para las Categorias
+{
+id: 1
+name: "bebida energetica"
 }
 ```
 
