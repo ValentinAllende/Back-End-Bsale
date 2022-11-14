@@ -24,7 +24,7 @@ name: "bebida energetica"
 - url_image: imagen del producto
 - price: precio del producto
 - discount: descuento que se le hace al producto
-- category: es la categoria la que pertenece el producto se represanta con un numero del 1-7
+- category: es la categoria a la que pertenece el producto se represanta con un numero del 1-7
 
 ## Categorias
 - 1: bebida energetica
